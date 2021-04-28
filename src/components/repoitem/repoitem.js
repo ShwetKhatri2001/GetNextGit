@@ -15,11 +15,11 @@ const RepoItem = ({ repo }) => {
   };
 
   return (
-    <div className={`${styles.repoListItem} box`}>
+    <div className={`${styles.repoItem} box`}>
       <div className={styles.repoName}>
         <VscRepo className={styles.repoIcon}/>
         <Link href="/repo/[id]" as={`/repo/${repo.id}`}>
-          <a>{repo.name}</a>
+          {repo.name}
         </Link>
       </div>
 

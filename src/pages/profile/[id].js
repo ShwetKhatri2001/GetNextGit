@@ -9,33 +9,38 @@ const Profile = ({ profile }) => {
     <div>
       <ButtonLink href="/" text="Back" />
 
-      <UserAvatar user={profile}></UserAvatar>
-      <h3 className="is-size-3">{profile.name}</h3>
-        {profile.bio && <div className={styles.text}>{profile.bio}</div>}
-        {profile.email && <div className={styles.text}>{profile.email}</div>}
-        {profile.blog && <div className={styles.text}>{profile.blog}</div>}
-        {profile.location && (
-        <div className={styles.text}>{profile.location}</div>
-      )}
+      <div className={styles.userProfile}>
+        <UserAvatar user={profile} isLarge={true}/>
+        <div className={styles.userDetails}>
+          {profile.bio && 
+                <div className={styles.text}>{profile.bio}</div>}
+          {profile.email && 
+                <div className={styles.text}>{profile.email}</div>}
+          {profile.blog && <div className={styles.text}>
+                <a target="_blank" href={profile.blog}>{profile.blog}</a></div>}
+          {profile.location && (
+                <div className={styles.text}>{profile.location}</div>)}
+      
+        <div className={styles.counters}>
+            <div className={styles.counter}>
+              <FaGrinStars/>
+              <span>Followers :  {profile.followers}</span>
+            </div>
+            <div className={styles.counter}>
+              <FaGrinStars/>
+              <span>Following : {profile.following}</span>
+            </div>
+        </div>
 
-      <div className={styles.counters}>
-          <div className={styles.counter}>
-            <FaGrinStars/>
-            <span>Followers :  {profile.followers}</span>
-          </div>
-          <div className={styles.counter}>
-            <FaGrinStars/>
-            <span>Following : {profile.following}</span>
-          </div>
+        <ButtonLink
+          href={profile.html_url}
+          text="View on Github"
+          type="dark"
+          target="_blank"
+          external
+        />
+        </div>
       </div>
-
-      <ButtonLink
-        href={profile.html_url}
-        text="View on Github"
-        type="dark"
-        target="_blank"
-        external
-      />
     </div>
   );
 };

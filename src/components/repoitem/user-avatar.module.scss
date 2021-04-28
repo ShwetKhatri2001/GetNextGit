@@ -1,14 +1,42 @@
+@import '../../scss/colors.scss';
+
 .user {
     display: flex;
     margin-bottom: 15px;
-  }
-  
+ 
   .userLink {
     margin-top:10px;
     margin-left: 10px;
+
+  a:hover{
+      color:$app-dark-blue;
+    }
   }
   
   .avatar {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
   }
+}
+
+.mainUser{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:10px;
+
+  .userLink {
+    margin-top:10px;
+    font-size: 30px;
+
+  a:hover{
+      color:$app-dark-blue;
+    }
+  }
+  
+  .avatar {
+    width: 250px;
+    height: 250px;
+  }
+}

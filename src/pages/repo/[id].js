@@ -8,20 +8,21 @@ const Repo = ({ repo }) => {
     <div>
       <ButtonLink href="/" text="Back" />
 
-      <div className={styles.header}>
-        <span>{repo.name}</span>
-      </div>
-      <UserAvatar user={repo.owner}></UserAvatar>
-      <div className={styles.description}>{repo.description}</div>
-      <div className={styles.language}>{repo.language}</div>
+      <div className={styles.repoProfile}>
+        <UserAvatar user={repo.owner} isLarge repo={repo}/>
+        <div className={styles.repoDetails}>
+          <div className={styles.description}>{repo.description}</div>
+          <div className={styles.language}>{repo.language}</div>
 
-      <ButtonLink
-        href={repo.html_url}
-        text="View on Github"
-        type="dark"
-        target="_blank"
-        external
-      />
+          <ButtonLink
+            href={repo.html_url}
+            text="View on Github"
+            type="dark"
+            target="_blank"
+            external
+          />
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,14 +1,20 @@
 @import '../../scss/colors.scss';
 
-.header {
-  margin-bottom: 20px;
+.repoProfile{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
-  span {
-    font-weight: 700;
-    font-size: 30px;
-    background: $app-light-grey;
-    padding: 5px;
-  }
+.repoDetails{
+  margin:20px;
+  display:flex;
+  flex-direction:column;
+
+ a:hover{
+   color: $app-blue;
+ }
 }
 
 .description {

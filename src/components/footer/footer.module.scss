@@ -1,0 +1,21 @@
+@import '../../scss/colors.scss';
+
+.footer{
+    font-size: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:$app-light-grey;
+    color:white;
+
+    a{
+        font-size:35px;
+        margin-left:3px;
+
+        &:hover{
+            color:$app-dark-blue;
+        }
+    }
+}

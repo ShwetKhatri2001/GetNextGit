@@ -1,0 +1,47 @@
+@import '../../scss/colors.scss';
+
+
+.languageSelect {
+
+   label{
+    color:$app-white-grey;
+   }
+
+    
+  select {
+    width: 180px;
+    background-color: $app-light-grey;
+    color:$app-white-grey;
+    border:none;
+    box-shadow: 0 7px 14px rgba(0,0,0,0.45), 0 5px 5px rgba(0,0,0,0.42);
+  }
+
+
+}
+
+
+.searchInput {
+
+  label{
+    color:$app-white-grey;
+   }
+
+  input{
+    width: 320px;
+    margin-right: 15px;
+    background-color: $app-light-grey;
+    color:$app-white-grey;
+    border:none;
+    outline:none;
+    box-shadow: 0 7px 14px rgba(0,0,0,0.45), 0 5px 5px rgba(0,0,0,0.42);
+  }
+
+  input:focus{
+    box-shadow: 0 7px 14px rgba(0,0,0,0.45), 0 5px 5px rgba(0,0,0,0.42);
+  }
+}
+
+.button {
+    margin-bottom: 20px;
+}
+

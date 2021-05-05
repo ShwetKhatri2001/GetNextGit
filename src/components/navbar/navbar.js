@@ -19,11 +19,11 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`navbar is-primary ${styles.nav} `}
+      className="navbar is-primary p-1 pr-5 is-size-5"
       role="navigation"
       aria-label="main navigation"
     >
-      <div className={`navbar-brand ${styles.navbar_brand}`}>
+      <div className={`navbar-brand has-text-weight-bold`}>
         <Link href="/">
           <a className="navbar-item"><VscGithub className={styles.logo}/>GetNextGit</a>
         </Link>

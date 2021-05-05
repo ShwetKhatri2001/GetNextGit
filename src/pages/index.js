@@ -1,9 +1,12 @@
 import React from 'react';
+import Head from 'next/head';
 import { useState} from 'react';
 import Search from '../components/search/search';
 import { searchRepos } from '../services/githubService';
 import RepoList from '../components/repolist/repolist';
 import { getRandomTopic } from '../helpers/randomTopic.helper';
+import { VscGithub } from 'react-icons/vsc';
+
 import styles from './index.module.scss';
 
 const Index = (props) => {
@@ -34,7 +37,10 @@ const Index = (props) => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={`page ${styles.container}`}>
+      <Head>
+         <title>GetNextGit | Home</title>
+      </Head>
       <img className={styles.logo} src="/img/gitdev.svg"></img>
       <Search
         searchText={searchText}

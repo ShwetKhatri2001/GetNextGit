@@ -2,6 +2,7 @@
 
 .footer{
     font-size: 20px;
+    padding:3px;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -11,11 +12,13 @@
     color:white;
 
     a{
-        font-size:35px;
+        font-size:30px;
         margin-left:3px;
+        padding:2px;
 
         &:hover{
             color:$app-dark-blue;
         }
     }
+
 }

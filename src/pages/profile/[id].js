@@ -1,13 +1,21 @@
 import React from 'react';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
 import styles from './profile.module.scss';
 import ButtonLink from '../../components/basic/button-link';
 import { FaGrinStars } from 'react-icons/fa';
 import UserAvatar from '../../components/repoitem/user-avatar';
 
 const Profile = ({ profile }) => {
+
+  const router = useRouter();
+  
   return (
-    <div>
-      <ButtonLink href="/" text="Back" />
+    <div className="page">
+      <Head>
+         <title>GetNextGit | GetProfile</title>
+      </Head>
+      <ButtonLink href='/' text="Back"/>
 
       <div className={styles.userProfile}>
         <UserAvatar user={profile} isLarge={true}/>

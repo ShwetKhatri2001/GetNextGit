@@ -1,8 +1,12 @@
 import React from 'react';
+import { useRouter } from 'next/router';
 import styles from './basic.module.scss';
 import Link from 'next/link';
 
 const ButtonLink = ({ href, text, type = 'primary', target, external }) => {
+
+  const router = useRouter();
+
   const types = {
     primary: 'is-primary',
     success: 'is-success',
@@ -24,12 +28,10 @@ const ButtonLink = ({ href, text, type = 'primary', target, external }) => {
   }
 
   return (
-    <div className={styles.button}>
-      <Link href={href}>
-        <a className={buttonClass} target={target}>
+    <div className={styles.button} onClick={() => router.back()}>
+      <a className={buttonClass} target={target}>
           {text}
         </a>
-      </Link>
     </div>
   );
 };

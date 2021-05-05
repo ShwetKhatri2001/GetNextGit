@@ -27,7 +27,7 @@ const RepoItem = ({ repo }) => {
       <p className={styles.description}>{cutDescription(repo.description)}</p>
 
       <div className={styles.footer}>
-        <div className={styles.counters}>
+        <div className="is-flex">
           <div className={styles.counter}>
             <FaStar />
             <span>{repo.stargazers_count}</span>

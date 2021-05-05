@@ -8,7 +8,8 @@ const Footer = () => {
   return (
         <footer className={styles.footer}>
             <div className={styles.bottom_div}>
-                <h4 className={styles.message}><span>Made&nbsp;With&nbsp;</span><a><BsFillHeartFill/></a>&nbsp; By <span>Shwet Khatri</span> 
+                <h4 className={styles.message}><span>Made&nbsp;With&nbsp;</span>
+                    <a href="https://github.com/ShwetKhatri2001/GetNextGit" target="_blank"><BsFillHeartFill/></a>&nbsp; By <span>Shwet Khatri</span> 
                     <a href="https://www.linkedin.com/in/shwet-khatri-4ab216196/" target="_blank"><AiOutlineLinkedin/></a>
                     <a href="https://github.com/ShwetKhatri2001" target="_blank"><VscGithub/></a>
                 </h4>

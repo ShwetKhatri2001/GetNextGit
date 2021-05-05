@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin:10px;
 }
 
 .repoDetails{
@@ -17,13 +18,35 @@
  }
 }
 
+.devBack{
+  margin: 20px 15px 20px 15px;
+}
+
+.devtitle{
+  padding:5px;
+  font-size:20px;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  background-color: $app-light-grey;
+  color:white;
+}
+
+.gitLink{
+  margin-top:10px;
+  font-size: 30px;
+  a:hover{
+    color:$app-dark-blue;
+  }
+}
+
 .description {
   padding-bottom: 20px;
 }
 
 .language {
   font-weight: 500;
-  color: $app-dark-blue;
+  color: $app-blue;
   font-size: 24px;
   padding-bottom: 15px;
 }

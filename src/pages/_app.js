@@ -7,10 +7,10 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <Head>
-        <title>GetNextGit</title>
+          <link rel="icon" href="/gitfav.ico" />
       </Head>
       <Navbar/>
-      <div className="page">
+      <div>
         <Component {...pageProps} />
       </div>
       <Footer/>

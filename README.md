@@ -1,3 +1,27 @@
+* Hi 👋 Shwet here, Welcome to 🎁 GetNextGit 🎁- GitHub Info Web App
+
+## 👌 Features
+
+* Get GitRepos related to a trending topic with Awesome UI on Homepage 
+* Find GitRepos by giving a topic and selecting a language 🧐
+* Get more information about GitRepo OR GitUser on a separate page using links given on cards on Homepage
+* Know more about Web App and Developer on About Page 🤵
+* Totally Responsive for any devise 📱 
+
+## :rocket: Technologies Used
+
+* NextJS
+* ReactJS
+* Bulma
+* SCSS
+
+## Note
+* Most of the data is fetched from [GitHub REST API](https://docs.github.com/en/rest)
+
+## Go and Check Now: 🎁[GetNextGit](https://getnextgit.vercel.app/)🎁
+* It is hosted on vercel : https://getnextgit.vercel.app/
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

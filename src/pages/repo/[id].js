@@ -1,11 +1,16 @@
 import React from 'react';
+import Head from 'next/head';
 import styles from './repo.module.scss';
 import ButtonLink from '../../components/basic/button-link';
 import UserAvatar from '../../components/repoitem/user-avatar';
 
+
 const Repo = ({ repo }) => {
   return (
-    <div>
+    <div className="page">
+       <Head>
+         <title>GetNextGit | GetRepo</title>
+      </Head>
       <ButtonLink href="/" text="Back" />
 
       <div className={styles.repoProfile}>

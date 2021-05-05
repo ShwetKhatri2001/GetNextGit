@@ -1,5 +1,5 @@
 function getRandomTopic() {
-    const topics = ['covid', 'nextjs', 'firebase', 'web', 'mern', 'india'];
+    const topics = ['covid', 'react', 'firebase', 'webdev', 'mern', 'india'];
     return topics[Math.floor(Math.random() * topics.length)];
   }
   
